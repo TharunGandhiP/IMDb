@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+</head>
+<style media="screen">
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:#001220;
+    font-family: 'Arial';
+    background-image: url("img1.jpg");
+  }
+
+  .login {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: rgba(250, 114, 104,0.2);
+    border-radius: 15px ;
+  }
+
+  h2 {
+    text-align: center;
+    color: #FA7268;
+    padding: 20px;
+  }
+
+  label {
+    color: #FA7268;
+    font-size: 17px;
+  }
+
+  #Uname {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+
+  #Pass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+
+  #log {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+  }
+
+  span {
+    color: white;
+    font-size: 17px;
+  }
+
+  a {
+    float: right;
+    background-color: grey;
+  }
+</style>
+<body>
+  <h2>Login Page</h2><br>
+  <div class="login">
+    <form id="loginForm" method="post" action="/login">
+      <label><b>User Name</b></label>
+      <input type="text" name="username" id="Uname" placeholder="Username">
+      <br><br>
+      <label><b>Password</b></label>
+      <input type="password" name="password" id="Pass" placeholder="Password">
+      <br><br>
+      <button name="login" id="log" type="submit">Log in</button>
+      <br><br>
+    </form>
+  </div>
+</body>
+</html>
+<script>
+  // Get the login form and submit button
+  const loginForm = document.getElementById('loginForm');
+  const submitBtn = document.getElementById('log');
+
+  // Add an event listener to the submit button
+  submitBtn.addEventListener('click', function(event) {
+    // Prevent the form from submitting
+    event.preventDefault();
+
+    // Get the username and password input fields
+    const usernameInput = document.getElementById('Uname');
+    const passwordInput = document.getElementById('Pass');
+
+    // Check if the username and password fields are empty
+    if (usernameInput.value.trim() === '') {
+      alert('Please enter a username.');
+      return;
+    }
+
+    if (passwordInput.value.trim() === '') {
+      alert('Please enter a password.');
+      return;
+    }
+
+    // If both fields are not empty, submit the form
+    loginForm.submit();
+  });
+</script>

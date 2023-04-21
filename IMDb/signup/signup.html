@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.js"></script>
+</head>
+<style media="screen">
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:#001220;
+    font-family: 'Arial';
+    background-image: url("img1.jpg");
+  }
+
+  .signup {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: rgba(250, 114, 104,0.2);
+    border-radius: 15px ;
+  }
+
+  h2 {
+    text-align: center;
+    color: #FA7268;
+    padding: 20px;
+  }
+
+  label {
+    color: #FA7268;
+    font-size: 17px;
+  }
+
+  #Uname {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+  #email {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+
+  #Pass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+
+  #sign {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+  }
+
+  span {
+    color: white;
+    font-size: 17px;
+  }
+
+  a {
+    float: right;
+    background-color: grey;
+  }
+</style>
+<body ng-app="myApp">
+  <h2>SignUp</h2><br>
+  <div ng-controller="myCtrl">
+    <form class="signup" id="SignUpForm" name="SignUpForm" ng-submit="submitForm()" method="post" action="/signup" novalidate>
+      <label><b>User Name</b></label>
+      <input type="text" name="username" id="Uname" placeholder="Username" ng-model="formData.username" ng-pattern="/^[a-zA-Z]{1,10}$/" required>
+      <div ng-show="SignUpForm.username.$dirty && SignUpForm.username.$invalid">
+        <span ng-show="SignUpForm.username.$error.required">Username is required.</span>
+        <span ng-show="SignUpForm.username.$error.pattern">Username should contain only alphabets and should not exceed 10 characters.</span>
+      </div>
+      <br><br>
+      <label><b>Email </b></label><br>
+      <input type="email" name="email" id="email" placeholder="Email" ng-model="formData.email" required>
+      <div ng-show="SignUpForm.email.$dirty && SignUpForm.email.$invalid">
+        <span ng-show="SignUpForm.email.$error.required">Email is required.</span>
+        <span ng-show="SignUpForm.email.$error.email">Invalid email address.</span>
+      </div>
+      <br><br>
+      <label><b>Password</b></label>
+      <input type="password" name="password" id="Pass" placeholder="Password" ng-model="formData.password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/" required>
+      <div ng-show="SignUpForm.password.$dirty && SignUpForm.password.$invalid">
+        <span ng-show="SignUpForm.password.$error.required">Password is required.</span>
+        <span ng-show="SignUpForm.password.$error.pattern">Password must contain at least one letter, one number, and be at least 8 characters long.</span>
+      </div>
+      <br><br>
+      <input type="submit" value="SignUp" id="sign">
+    </form>
+  </div>
+  <script>
+    var app = angular.module('myApp', ['ngMessages']);
+    app.controller('myCtrl', function ($scope) {
+      $scope.formData = {};
+      $scope.submitForm = function () {
+        if ($scope.SignUpForm.$valid) {
+          alert("Form submitted successfully.");
+        }
+      };
+    });
+  </script>
+</body>
+</html>

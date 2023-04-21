@@ -1,0 +1,161 @@
+[{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfacc"
+  },
+  "name": "Ted",
+  "image": "./assets/thumbnails/comedy/ted.jpg",
+  "directer": "Seth MacFarlane",
+  "path": "./Connectivity/comedy/ted.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfacd"
+  },
+  "name": "Puss in Boots",
+  "image": "./assets/thumbnails/comedy/puss.jpg",
+  "directer": "Chris Miller",
+  "path": "./Connectivity/comedy/puss.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdface"
+  },
+  "name": "PK",
+  "image": "./assets/thumbnails/comedy/pk.jpg",
+  "directer": "Rajkumar Hirani",
+  "path": "./Connectivity/comedy/pk.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfacf"
+  },
+  "name": "Junga",
+  "image": "./assets/thumbnails/comedy/junga.jpg",
+  "directer": "Gokul",
+  "path": "./Connectivity/comedy/junga.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad0"
+  },
+  "name": "Cirkus",
+  "image": "./assets/thumbnails/comedy/cirkus.jpg",
+  "directer": "Rohit Shetty",
+  "path": "./Connectivity/comedy/cirkus.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad1"
+  },
+  "name": "Bajirao Mastani",
+  "image": "./assets/thumbnails/drama/bajirao.jpg",
+  "directer": "Sanjay Leela Bhansali",
+  "path": "./Connectivity/drama/bajirao.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad2"
+  },
+  "name": "Gully Boy",
+  "image": "./assets/thumbnails/drama/Gully.jpg",
+  "directer": "Zoya Akhtar",
+  "path": "./Connectivity/drama/gully.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad3"
+  },
+  "name": "Goodwill Hunting",
+  "image": "./assets/thumbnails/drama/good.jpg",
+  "directer": "Gus Van Sant",
+  "path": "./Connectivity/drama/good.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad4"
+  },
+  "name": "Creed",
+  "image": "./assets/thumbnails/drama/creed.jpg",
+  "directer": "Ryan Coogler",
+  "path": "./Connectivity/drama/creed.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad5"
+  },
+  "name": "Varisu",
+  "image": "./assets/thumbnails/drama/varisu.jpg",
+  "directer": "Vamshi Paidipally",
+  "path": "./Connectivity/drama/varisu.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad6"
+  },
+  "name": "American Psycho",
+  "image": "./assets/thumbnails/thriller/american.jpg",
+  "directer": "Mary Harron",
+  "path": "./Connectivity/thriller/american.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad7"
+  },
+  "name": "Freddy",
+  "image": "./assets/thumbnails/thriller/freddy.jpg",
+  "directer": "Shashanka Ghosh",
+  "path": "./Connectivity/thriller/freddy.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad8"
+  },
+  "name": "Pathaan",
+  "image": "./assets/thumbnails/thriller/pathaan.jpg",
+  "directer": "Siddharth Anand",
+  "path": "./Connectivity/thriller/pathaan.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfad9"
+  },
+  "name": "Vikram-Vedha",
+  "image": "./assets/thumbnails/thriller/vikram.jpg",
+  "directer": "Pushkar–Gayathri",
+  "path": "./Connectivity/thriller/vikram.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfada"
+  },
+  "name": "Shutter Island",
+  "image": "./assets/thumbnails/thriller/shutter.jpg",
+  "directer": "Martin Scorsese",
+  "path": "./Connectivity/thriller/shutter.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfadb"
+  },
+  "name": "The Conjuring",
+  "image": "./assets/thumbnails/horror/conjuring.jpg",
+  "directer": "James Wan",
+  "path": "./Connectivity/horror/conjuring.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfadc"
+  },
+  "name": "The Exorcist",
+  "image": "./assets/thumbnails/horror/exorcist.jpg",
+  "directer": "William Friedkin",
+  "path": "./Connectivity/horror/exorcist.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfadd"
+  },
+  "name": "Laxmii",
+  "image": "./assets/thumbnails/horror/laxmii.jpg",
+  "directer": "Raghava Lawrence",
+  "path": "./Connectivity/horror/laxmii.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfade"
+  },
+  "name": "Pizza",
+  "image": "./assets/thumbnails/horror/pizza.jpg",
+  "directer": "Karthik Subbaraj",
+  "path": "./Connectivity/horror/pizza.html"
+},{
+  "_id": {
+    "$oid": "6437b98425be1acad8cdfadf"
+  },
+  "name": "Chhori",
+  "image": "./assets/thumbnails/horror/Chhori.jpg",
+  "directer": "Vishal Furia",
+  "path": "./Connectivity/horror/chhori.html"
+}]

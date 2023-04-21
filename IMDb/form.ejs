@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+
+</head>
+<style media="screen">
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:#001220;
+  }
+
+  .login {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: rgba(250, 114, 104,0.2);
+    border-radius: 15px ;
+  }
+
+  h2 {
+    text-align: center;
+    color: #FA7268;
+    padding: 20px;
+  }
+
+  label {
+    color: #FA7268;
+    font-size: 17px;
+  }
+
+  #Uname {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+
+  #Pass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+
+  #log {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+  }
+
+  span {
+    color: white;
+    font-size: 17px;
+  }
+
+  a {
+    float: right;
+    background-color: grey;
+  }
+</style>
+<body>
+
+  <h2>Customer Review Page</h2><br>
+
+  <div class="login">
+    <form action ="/submit" method="post">
+
+      <label><b>Your Suggestion:</b></label>
+      <br>
+      <input type="text" name="Suggestion" id="Uname" placeholder="">
+      <br><br>
+      <label><b>Problem You're Trying to Solve:</b></label>
+      <input type="text" name="problem" id="Pass" placeholder="">
+      <br><br>
+      <label><b>Movie's to Add:</b></label>
+      <input type="text" name="movie" id="Pass" placeholder="">
+      <br>
+      <br>
+      <label><b>Additional Comments:</b></label>
+      <input type="text" name="Comments" id="Pass" placeholder="">
+      <br><br>
+
+      <input type="submit" id="log" name="" value="submit">
+      <br><br>
+    </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+    {
+      "name":"Ted",
+      "image": "./Connectivity/comedy/ted.png",
+      "directer":"Seth MacFarlane",
+      "path":"./Connectivity/comedy/ted.html"
+    },
+    {
+      "name":"Puss in Boots",
+      "image": "./Connectivity/comedy/puss.jpg",
+      "directer":"Chris Miller",
+      "path":"./Connectivity/comedy/puss.html"
+    },
+    {
+      "name":"PK",
+      "image": "./Connectivity/comedy/pk.jpg",
+      "directer":"Rajkumar Hirani",
+      "path":"./Connectivity/comedy/pk.html"
+    },
+    {
+      "name":"Junga",
+      "image": "./Connectivity/comedy/junga.jpg",
+      "directer":"Gokul",
+      "path":"./Connectivity/comedy/junga.html"
+    },
+    {
+      "name":"Cirkus",
+      "image": "./Connectivity/comedy/cirkus.jpg",
+      "directer":"Rohit Shetty",
+      "path":"./Connectivity/comedy/cirkus.html"
+    },
+    {
+      "name":"Bajirao Mastani",
+      "image": "./Connectivity/drama/bajirao.jpg",
+      "directer":"Sanjay Leela Bhansali",
+      "path":"./Connectivity/drama/bajirao.html"
+    },
+    {
+      "name":"Gully Boy",
+      "image": "./Connectivity/drama/Gully.jpg",
+      "directer":"Zoya Akhtar",
+      "path":"./Connectivity/drama/gully.html"
+    },
+    {
+      "name":"Goodwill Hunting",
+      "image": "./Connectivity/drama/good.png",
+      "directer":"Gus Van Sant",
+      "path":"./Connectivity/drama/good.html"
+    },
+    {
+      "name":"Creed",
+      "image": "./Connectivity/drama/creed.jpg",
+      "directer":"Ryan Coogler",
+      "path":"./Connectivity/drama/creed.html"
+    },
+    {
+      "name":"Varisu",
+      "image": "./Connectivity/drama/varisu.jpg",
+      "directer":"Vamshi Paidipally",
+      "path":"./Connectivity/drama/varisu.html"
+    },
+    {
+      "name":"American Psycho",
+      "image": "./Connectivity/thriller/american.png",
+      "directer":"Mary Harron",
+      "path":"./Connectivity/thriller/american.html"
+    },
+    {
+      "name":"Freddy",
+      "image": "./Connectivity/thriller/freddy.jpg",
+      "directer":"Shashanka Ghosh",
+      "path":"./Connectivity/thriller/freddy.html"
+    },
+    {
+      "name":"Pathaan",
+      "image": "./Connectivity/thriller/pathaan.jpg",
+      "directer":"Siddharth Anand",
+      "path":"./Connectivity/thriller/pathaan.html"
+    },
+    {
+      "name":"Vikram-Vedha",
+      "image": "./Connectivity/thriller/vikram.jpg",
+      "directer":"Pushkar–Gayathri",
+      "path":"./Connectivity/thriller/vikram.html"
+    },
+    {
+      "name":"Shutter Island",
+      "image": "./Connectivity/thriller/shutter.jpg",
+      "directer":"Martin Scorsese",
+      "path":"./Connectivity/thriller/shutter.html"
+    },
+    {
+      "name":"The Conjuring",
+      "image": "./Connectivity/horror/conjuring.jpg",
+      "directer":"James Wan",
+      "path":"./Connectivity/horror/conjuring.html"
+    },
+    {
+      "name":"The Exorcist",
+      "image": "./Connectivity/horror/exorcist.jpg",
+      "directer":"William Friedkin",
+      "path":"./Connectivity/horror/exorcist.html"
+    },
+    {
+      "name":"Laxmii",
+      "image": "./Connectivity/horror/laxmii.jpg",
+      "directer":"Raghava Lawrence",
+      "path":"./Connectivity/horror/laxmii.html"
+    },
+    {
+      "name":"Pizza",
+      "image": "./Connectivity/horror/pizza.jpg",
+      "directer":"Karthik Subbaraj",
+      "path":"./Connectivity/horror/pizza.html"
+    },
+    {
+      "name":"Chhori",
+      "image": "./Connectivity/horror/Chhori.jpg",
+      "directer":"Vishal Furia",
+      "path":"./Connectivity/horror/chhori.html"
+    }
+  ]

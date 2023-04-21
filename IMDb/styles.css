@@ -1,0 +1,475 @@
+/* ------------- box model ------------- */
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* ------------- root for variables ------------- */
+:root{
+    --clr-background:#001220;
+    --clr-1:#FA7268;
+    --clr-2:#ef5f67;
+    --clr-3:#e34c67;
+    --clr-4:#d53867;
+    --clr-5:#C62368;
+}
+
+/* ------------- fonts ------------- */
+body{
+    background-color: var(--clr-background);
+    color: var(--clr-1);
+    font-family:Montserrat;
+    overflow-x: hidden;
+}
+
+/* ------------- hide the scrollbar ------------- */
+
+::-webkit-scrollbar{
+    width:0px;
+}
+
+
+/* ------------- styling divider ------------- */
+
+/* .dividero{
+    aspect-ratio: 960/200;
+    width:100%;
+
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-image: url("assets/svg/wavedownorange.svg");
+} */
+
+.divider{
+    aspect-ratio: 960/200;
+    width:100%;
+
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-image: url("assets/svg/wavedownblue.svg");
+}
+
+.up{
+    background-position: bottom;
+    background-image: url("assets/svg/waveupblue.svg");
+}
+
+/* .upo{
+    background-position: bottom;
+    background-image: url("assets/svg/waveuporange.svg");
+} */
+
+/* ------------- styling nav ------------- */
+
+#nav-button {
+    background: var(--clr-background);
+    border: 5px solid var(--clr-2);
+    border-radius: 0.75rem;
+
+    position:absolute;
+    top:5rem;
+    left:5rem;
+    z-index: 5;
+}
+  
+.line{
+    stroke:var(--clr-2);
+    transition: 800ms;
+    stroke-dasharray:60 31 60 30 60 300;
+    
+}
+  
+#nav-button[aria-expanded='true'] .line{
+    stroke-dasharray:60 142 60 1000;
+    rotate:45deg;
+    stroke-dashoffset: -90;
+}
+
+#nav-menu{
+    position:absolute;
+    top:10rem;
+    left:5rem;
+
+    display: none;
+
+    font-size: 2rem;
+    text-align: left;
+    
+    background:rgba(250, 114, 104, 0.2);
+    padding:2rem;
+    border-radius: 1rem;;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-1);
+}
+
+/* ------------- search bar ------------- */
+ul{
+    list-style-type: none;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.list-group {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+  }
+  
+  .list-group-item img {
+    display: block;
+    margin-right: 10px;
+    border-radius: 10%;
+    width: 80px;
+    height: 100px;
+  }
+  
+  .list-group-item .text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-group-item .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .list-group-item .directer {
+    font-size: 14px;
+    color: var(--clr-5);
+  }
+#result {
+    background:rgba(250, 114, 104, 0.2);
+    color: var(--clr-1);
+    position: absolute;
+    top: 605px;
+    width: 100%;
+    max-width:710px;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 150px;
+    border-radius: 25px;
+    z-index: 1001;
+   }
+/* ------------- finch ------------- */
+
+.finch{
+    stroke:var(--clr-2);
+
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}
+
+/* ------------- styling home ------------- */
+
+header{
+    position:relative;
+    height:100vh;
+    width:100vw;
+
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    gap:1rem;
+
+    text-align: center;
+}
+
+header > * {
+    padding-top:3rem;
+}
+
+.title{
+    padding-top: 10rem;
+    font-size: 12rem;
+    color:var(--clr-2);
+
+    /* animation-name: "fade-in";
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation */
+}
+
+.search-prompt{
+    color:var(--clr-4);
+    font-size: 3.5rem;translate: -17rem 0;
+
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar form{
+    width:50rem;
+    height:5rem;
+    border-radius: 2.5rem;
+    background:rgba(250, 114, 104, 0.2);
+
+    display: flex;
+    padding:2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-text,.search-submit{
+    background: transparent;
+    border:0;
+    outline: none;
+
+    font-size: 1.2rem;
+    color:var(--clr-1);
+}
+
+.search-text{
+    flex:1;
+}
+
+/* ------------- styling browse ------------- */
+
+main{
+    position:relative;
+    min-height:100vh;
+    width:100vw;
+    background-color:var(--clr-background);
+    color: var(--clr-v1);
+    
+    font-size: 2rem;
+}
+
+main > * {
+    padding:1rem;
+}
+
+.genre-list{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:5.2rem;
+
+    margin-left:2vw;
+}
+
+.genre{
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.genre-items{
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+
+.each-item{
+    position: relative;
+    width:15rem;
+    height:10rem;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 0.325rem;
+}
+
+.movie-name{
+    font-size: 2rem;
+    white-space: nowrap;
+    position:absolute;
+    left:50%;
+    top:100%;
+    translate:-50% 0;
+}
+
+.l{
+    position:relative;
+    min-height:12rem;
+}
+
+.c1{
+    background-image: url("assets/thumbnails/Comedy/Ted.jpg");
+}
+
+.c2{
+    background-image: url("assets/thumbnails/Comedy/pussinboots.jpg");
+}
+
+.c3{
+    background-image: url("assets/thumbnails/Comedy/pk.jpg");
+}
+
+.c4{
+    background-image: url("assets/thumbnails/Comedy/Junga.jpg");
+}
+
+.c5{
+    background-image: url("assets/thumbnails/Comedy/Cirkus.jpg");
+}
+
+.d1{
+    background-image: url("assets/thumbnails/Drama/bajirao.jpg");
+}
+
+.d2{
+    background-image: url("assets/thumbnails/Drama/gullyboy.jpg");
+}
+
+.d3{
+    background-image: url("assets/thumbnails/Drama/goodwillhunting.jpg");
+}
+
+.d4{
+    background-image: url("assets/thumbnails/Drama/Creed.jpg");
+}
+
+.d5{
+    background-image: url("assets/thumbnails/Drama/varisu.jpg");
+}
+
+.t1{
+    background-image: url("assets/thumbnails/Thriller/americanpsycho.jpg");
+}
+
+.t2{
+    background-image: url("assets/thumbnails/Thriller/freddy.jpg");
+}
+
+.t3{
+    background-image: url("assets/thumbnails/Thriller/pathaan.jpg");
+}
+
+.t4{
+    background-image: url("assets/thumbnails/Thriller/vikramvedha.jpg");
+}
+
+.t5{
+    background-image: url("assets/thumbnails/Thriller/shutterisland.jpg");
+}
+
+.h1{
+    background-image: url("assets/thumbnails/Horror/conjuring.jpg");
+}
+
+.h2{
+    background-image: url("assets/thumbnails/Horror/exorcist.jpg");
+}
+
+.h3{
+    background-image: url("assets/thumbnails/Horror/laxmii.jpg");
+}
+
+.h4{
+    background-image: url("assets/thumbnails/Horror/pizza.jpg");
+}
+
+.h5{
+    background-image: url("assets/thumbnails/Horror/chhorri.jpg");
+}
+/* ------------- styling ejs browse ------------- */
+
+.browselist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:2rem;
+}
+
+.browselist > * {
+    align-content: center;
+    text-align: center;
+    
+    font-size: 2rem;
+}
+
+.movimg{
+    aspect-ratio: 16/9;
+    width: 90%;
+    object-fit: cover;
+    border-radius:0.5rem;  
+}
+
+/* ------------- game ------------- */
+  
+  
+#level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: #FEF2BF;
+    text-align: center;
+}
+  
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex:1;
+    justify-content: space-evenly;
+}
+
+
+
+.btn img {
+    display: block;
+    margin: auto;
+    max-height: 200px;
+    max-width: 200px;
+    border: 10px solid black;
+}
+  
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+}
+  
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+.red {
+    background-color: red;
+}
+  
+.green {
+    background-color: green;
+}
+  
+.blue {
+    background-color: blue;
+}
+  
+.yellow {
+    background-color: yellow;
+}
+  
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
