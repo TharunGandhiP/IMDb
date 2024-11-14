@@ -1,0 +1,1 @@
+npm install mongoose express ejs path body-parser cookie-parser concurrently
