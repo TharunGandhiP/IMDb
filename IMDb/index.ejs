@@ -79,7 +79,7 @@
               <% if(details!=null) { %>
                   <% details.forEach(function(item){ %>
                       <a href="<%= item.path %>">
-                          <img class="movimg" src="<%= item.image %>" alt="">
+                          <img class="movimg" src="<%= item.image %>" alt="" loading="lazy">
                           <span class="movname"><%= item.name %></span>
                       </a>
                   <% }) %>
