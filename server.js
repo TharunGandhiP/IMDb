@@ -9,7 +9,7 @@ const app = express();
 
 // Set up a MongoDB connection
 mongoose.set("strictQuery", true);
-mongoose.connect("mongodb://127.0.0.1:27017/imdbdb", {
+mongoose.connect("mongodb+srv://tharungandhiperasiriyan:P14tivWB8GG1OeGm@cluster0.qnb2b.mongodb.net/imdbdb", {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 })
