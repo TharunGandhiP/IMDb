@@ -4,12 +4,13 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const path = require("path");
 const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
 const app = express();
 
 // Set up a MongoDB connection
 mongoose.set("strictQuery", true);
-mongoose.connect("mongodb+srv://tharungandhiperasiriyan:P14tivWB8GG1OeGm@cluster0.qnb2b.mongodb.net/imdbdb", {
+mongoose.connect(process.env.MONGO_URI, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 })
@@ -151,6 +152,7 @@ app.get('/submit', (req, res) => {
     });
     
 // Start the server
-    app.listen(3000, () => {
-    console.log('Server started on port 3000');
-    });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`);
+});
