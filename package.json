@@ -10,6 +10,6 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "concurrently \"node login.js\" \"node server.js\" \"node signup.js\""
+    "start":"node server.js"
   }
 }
