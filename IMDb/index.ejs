@@ -75,22 +75,20 @@
   
         <section class="ejs">
   
-            <div class="browselist">
-                <% if (details != null) { %>
-                    <% details.forEach(function(item) { %>
-                        <a href="<%= item.path %>">
-                            <img class="movimg" src="<%= item.image %>" alt="">
-                            <span class="movname"><%= item.name %></span>
-                        </a>
-                    <% }) %>
-                <% } else { %>
-                    <h1 class="title">Please login to browse</h1>
-                <% } %>
-            </div>
-            
+          <div class="browselist">
+              <% if(details!=null) { %>
+                  <% details.forEach(function(item){ %>
+                      <a href="<%= item.path %>">
+                          <img class="movimg" src="<%= item.image %>" alt="">
+                          <span class="movname"><%= item.name %></span>
+                      </a>
+                  <% }) %>
+              <% } %>
+          </div>
         </section>
   
         <div class="divider up"></div>
+        <div class="divider"></div>
       </main>
  
     <footer>
